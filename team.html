@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Team</title>
+    <link rel="stylesheet" href="style.css" />
+    <style>
+      .section-box {
+        border: 2px solid #d2b48c;
+        border-radius: 16px;
+        padding: 20px;
+        margin: 20px 0;
+      }
+      .team-member {
+        display: flex;
+        align-items: center;
+        margin-bottom: 16px;
+      }
+      .team-member img {
+        width: 60px;
+        height: 60px;
+        border-radius: 50%;
+        margin-right: 16px;
+        object-fit: cover;
+        border: 1px solid #d2b48c;
+      }
+      .team-info {
+        display: flex;
+        flex-direction: column;
+      }
+      .team-info span {
+        font-weight: bold;
+        color: #4b2e2e;
+      }
+      .team-info a {
+        font-size: 0.9rem;
+        color: #8b5e3c;
+      }
+    </style>
+  </head>
+  <body>
+    <header>
+      <nav class="navbar">
+        <div class="navbar_logo">
+          <a href="index.html"><img src="img/sumin.png" alt="Logo" /></a>
+        </div>
+        <ul class="navbar_menu">
+          <li><a href="index.html">Home</a></li>
+          <li><a href="contact.html">Contact</a></li>
+          <li><a href="work.html">Work</a></li>
+          <li><a href="secon.html">SECON</a></li>
+          <li><a href="team.html">Team</a></li>
+        </ul>
+        <div class="navbar_btn">&#9776;</div>
+      </nav>
+    </header>
+
+    <main>
+      <div class="container">
+        <div class="section-box">
+          <h2>팀 프로젝트 소개</h2>
+          <p>생성형 AI를 이용하는 웹개발, 소프트웨어 개발에 대한 ~</p>
+        </div>
+
+        <div class="section-box">
+          <h2>팀원 소개</h2>
+          <div class="team-member">
+            <img
+              src="https://avatars.githubusercontent.com/u/202579409?v=4"
+              alt="김가연"
+            />
+            <div class="team-info">
+              <span>김가연</span>
+              <span>역할</span>
+              <a href="https://github.com/bora120">GitHub</a>
+            </div>
+          </div>
+          <div class="team-member">
+            <img
+              src="https://avatars.githubusercontent.com/u/143259510?v=4"
+              alt="조은수"
+            />
+            <div class="team-info">
+              <span>조은수</span>
+              <span>역할</span>
+              <a href="https://github.com/myyonop">GitHub</a>
+            </div>
+          </div>
+          <div class="team-member">
+            <img
+              src="https://avatars.githubusercontent.com/u/198033843?v=4"
+              alt="천서연"
+            />
+            <div class="team-info">
+              <span>천서연</span>
+              <span>역할</span>
+              <a href="https://github.com/westkiteS2">GitHub</a>
+            </div>
+          </div>
+          <div class="team-member">
+            <img
+              src="https://avatars.githubusercontent.com/u/202579356?v=4"
+              alt="최수민"
+            />
+            <div class="team-info">
+              <span>최수민</span>
+              <span>역할</span>
+              <a href="https://github.com/sumin8838">GitHub</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </main>
+
+    <footer>&copy; 나의 포트폴리오</footer>
+
+    <script>
+      const btn = document.querySelector('.navbar_btn')
+      const menu = document.querySelector('.navbar_menu')
+      btn.addEventListener('click', () => {
+        menu.classList.toggle('active')
+      })
+    </script>
+  </body>
+</html>

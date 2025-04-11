@@ -1,0 +1,155 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  font-family: 'Helvetica Neue', sans-serif;
+}
+
+body {
+  padding-top: 60px;
+  background-color: #fefefe;
+  color: #3e2f23;
+  line-height: 1.6;
+}
+
+a {
+  text-decoration: none;
+  color: #8b5e3c;
+  transition: color 0.3s ease;
+}
+
+a:hover {
+  color: #5c3b21;
+}
+
+header {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  background-color: #fffaf5;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  z-index: 1000;
+}
+
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px 24px;
+}
+
+.navbar_logo img {
+  height: 50px;
+}
+
+.navbar_menu {
+  display: flex;
+  list-style: none;
+  gap: 18px;
+}
+
+.navbar_menu li a {
+  padding: 8px 12px;
+  font-weight: 500;
+  border-radius: 6px;
+}
+
+.navbar_menu li a:hover {
+  font-weight: bolder;
+}
+
+.navbar_btn {
+  display: none;
+  font-size: 26px;
+  cursor: pointer;
+  color: #3e2f23;
+}
+
+@media screen and (max-width: 768px) {
+  .navbar {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .navbar_menu {
+    display: none;
+    flex-direction: column;
+    width: 100%;
+    padding-top: 10px;
+  }
+
+  .navbar_menu.active {
+    display: flex;
+  }
+
+  .navbar_menu li {
+    width: 100%;
+    text-align: center;
+    padding: 10px 0;
+  }
+
+  .navbar_btn {
+    display: block;
+    position: absolute;
+    right: 24px;
+    top: 16px;
+  }
+}
+
+main {
+  padding: 40px 20px;
+  max-width: 960px;
+  margin: 0 auto;
+}
+
+.container h1 {
+  font-size: 48px;
+  margin-bottom: 20px;
+  color: #3e2f23;
+  border-bottom: 2px solid #8b5e3c;
+  display: inline-block;
+}
+
+.container ul {
+  list-style: none;
+  margin-top: 20px;
+  padding-left: 20px;
+}
+
+.container ul li {
+  margin: 12px 0;
+  font-size: 18px;
+  position: relative;
+}
+
+.container ul li::before {
+  content: '\2022';
+  color: #8b5e3c;
+  font-weight: bold;
+  display: inline-block;
+  width: 1em;
+  margin-left: -1em;
+}
+
+section {
+  margin-bottom: 60px;
+}
+
+footer {
+  text-align: center;
+  padding: 20px;
+  background-color: #f4f0eb;
+  font-size: 14px;
+  color: #5c3b21;
+  margin-top: 60px;
+  border-top: 1px solid #ddd2c4;
+}
+
+.container h2 {
+  font-size: 36px;
+  margin-bottom: 16px;
+  color: #5c3b21;
+  border-bottom: 1px solid #d7c4b0;
+  padding-bottom: 6px;
+}

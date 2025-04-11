@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Home</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <header>
+      <nav class="navbar">
+        <div class="navbar_logo">
+          <a href="index.html"><img src="img/sumin.png" alt="Logo" /></a>
+        </div>
+        <ul class="navbar_menu">
+          <li><a href="index.html">Home</a></li>
+          <li><a href="contact.html">Contact</a></li>
+          <li><a href="work.html">Work</a></li>
+          <li><a href="secon.html">SECON</a></li>
+          <li><a href="team.html">Team</a></li>
+        </ul>
+        <div class="navbar_btn">&#9776;</div>
+      </nav>
+    </header>
+
+    <main>
+      <div class="container">
+        <h2>최수민의 Portfolio</h2>
+      </div>
+      <div>
+        <img
+          src="https://www.simulise.com/wp-content/uploads/2024/02/Josetta-Hak-Conrector-800-x-534-px-1.jpg"
+          alt=""
+          width="1000"
+        />
+      </div>
+    </main>
+
+    <footer>&copy; 나의 포트폴리오</footer>
+
+    <script>
+      const btn = document.querySelector('.navbar_btn')
+      const menu = document.querySelector('.navbar_menu')
+      btn.addEventListener('click', () => {
+        menu.classList.toggle('active')
+      })
+    </script>
+  </body>
+</html>

@@ -1,3 +1,4 @@
+/* 전체 요소에 기본 스타일 초기화 및 폰트 설정 */
 * {
   box-sizing: border-box;
   margin: 0;
@@ -5,6 +6,7 @@
   font-family: 'Helvetica Neue', sans-serif;
 }
 
+/* 페이지 기본 배경색 및 텍스트 스타일 */
 body {
   padding-top: 60px;
   background-color: #fefefe;
@@ -12,6 +14,7 @@ body {
   line-height: 1.6;
 }
 
+/* 링크 기본 스타일 및 hover 효과 */
 a {
   text-decoration: none;
   color: #8b5e3c;
@@ -22,6 +25,7 @@ a:hover {
   color: #5c3b21;
 }
 
+/* 상단 고정 헤더 스타일 */
 header {
   position: fixed;
   top: 0;
@@ -32,6 +36,7 @@ header {
   z-index: 1000;
 }
 
+/* 네비게이션 바 레이아웃 */
 .navbar {
   display: flex;
   justify-content: space-between;
@@ -39,26 +44,31 @@ header {
   padding: 10px 24px;
 }
 
+/* 로고 이미지 크기 */
 .navbar_logo img {
   height: 50px;
 }
 
+/* 네비게이션 메뉴 스타일 */
 .navbar_menu {
   display: flex;
   list-style: none;
   gap: 18px;
 }
 
+/* 메뉴 항목 링크 스타일 */
 .navbar_menu li a {
   padding: 8px 12px;
   font-weight: 500;
   border-radius: 6px;
 }
 
+/* 메뉴 항목 hover 시 굵게 표시 */
 .navbar_menu li a:hover {
   font-weight: bolder;
 }
 
+/* 모바일용 햄버거 버튼 스타일 */
 .navbar_btn {
   display: none;
   font-size: 26px;
@@ -66,12 +76,15 @@ header {
   color: #3e2f23;
 }
 
+/* 화면 너비 768px 이하일 때 레이아웃 변경 */
 @media screen and (max-width: 768px) {
+  /* 네비게이션 수직 정렬 */
   .navbar {
     flex-direction: column;
     align-items: flex-start;
   }
 
+  /* 메뉴 기본적으로 숨김 */
   .navbar_menu {
     display: none;
     flex-direction: column;
@@ -79,16 +92,19 @@ header {
     padding-top: 10px;
   }
 
+  /* 메뉴 열릴 때 보이게 함 */
   .navbar_menu.active {
     display: flex;
   }
 
+  /* 메뉴 항목 너비 및 정렬 */
   .navbar_menu li {
     width: 100%;
     text-align: center;
     padding: 10px 0;
   }
 
+  /* 햄버거 버튼 표시 위치 조정 */
   .navbar_btn {
     display: block;
     position: absolute;
@@ -97,12 +113,14 @@ header {
   }
 }
 
+/* 메인 콘텐츠 여백 및 최대 너비 설정 */
 main {
   padding: 40px 20px;
   max-width: 960px;
   margin: 0 auto;
 }
 
+/* 큰 제목 스타일 */
 .container h1 {
   font-size: 48px;
   margin-bottom: 20px;
@@ -111,18 +129,21 @@ main {
   display: inline-block;
 }
 
+/* 리스트 기본 스타일 */
 .container ul {
   list-style: none;
   margin-top: 20px;
   padding-left: 20px;
 }
 
+/* 리스트 항목 간격 및 글자 크기 */
 .container ul li {
   margin: 12px 0;
   font-size: 18px;
   position: relative;
 }
 
+/* 리스트 앞에 점 추가 스타일 */
 .container ul li::before {
   content: '\2022';
   color: #8b5e3c;
@@ -132,10 +153,12 @@ main {
   margin-left: -1em;
 }
 
+/* 섹션 간 여백 */
 section {
   margin-bottom: 60px;
 }
 
+/* 푸터 스타일 */
 footer {
   text-align: center;
   padding: 20px;
@@ -146,6 +169,7 @@ footer {
   border-top: 1px solid #ddd2c4;
 }
 
+/* 소제목 스타일 */
 .container h2 {
   font-size: 36px;
   margin-bottom: 16px;
@@ -154,6 +178,7 @@ footer {
   padding-bottom: 6px;
 }
 
+/* 후기 박스 중앙 정렬 */
 .review-box {
   display: flex;
   flex-direction: column;
@@ -161,6 +186,7 @@ footer {
   margin-bottom: 24px;
 }
 
+/* 반응형 이미지 스타일 */
 .responsive-image {
   max-width: 100%;
   height: auto;
@@ -168,6 +194,7 @@ footer {
   margin: 0 auto;
 }
 
+/* 과제 리스트 그리드 레이아웃 */
 .assignment-list {
   display: grid;
   grid-template-columns: 1fr;
@@ -175,6 +202,7 @@ footer {
   margin-top: 20px;
 }
 
+/* 과제 항목 박스 스타일 */
 .assignment-item {
   text-align: center;
   padding: 16px;
@@ -183,6 +211,7 @@ footer {
   background-color: #fffdf9;
 }
 
+/* 과제 이미지 스타일 */
 .assignment-img {
   width: 100%;
   max-width: 500px;
@@ -191,6 +220,7 @@ footer {
   margin-bottom: 12px;
 }
 
+/* 과제 링크 스타일 */
 .assignment-item a {
   display: inline-block;
   font-size: 18px;
@@ -204,6 +234,7 @@ footer {
   text-decoration: underline;
 }
 
+/* 화면 너비 700px 이상일 때 두 개의 열로 구성 */
 @media (min-width: 700px) {
   .assignment-list {
     grid-template-columns: 1fr 1fr;
